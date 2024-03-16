@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saathi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Add Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- <link rel="stylesheet" href="Style/style.css" /> -->
+    <link rel="stylesheet" href="Style/style1.css">
+    <!-- <style>
+
+* {
+-webkit-user-select: none;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        #header {
+            background: linear-gradient(to bottom, #000000, #333);
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px; 
+        }
+
+        #header-title {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        #header-icons {
+            display: flex;
+        }
+
+        #header-icons i {
+            font-size: 25px; 
+            margin: 0 10px; 
+        }
+
+        #main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #444;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 150px;
+            height: 150px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #000000, #333);
+        }
+    </style> -->
+
+    <style>
+      .swiper-container {
+        width: 100%;
+        /* padding: 20px 0; */
+        overflow: hidden;
+      }
+      .swiper-slide {
+        /* width: 25%; */
+        width: 110px !important;
+        /* padding: 0 10px; */
+        box-sizing: border-box;
+      }
+      .button {
+        text-align: center;
+      }
+      .button img {
+        max-width: 100%;
+      }
+      .button p {
+        margin-top: 10px;
+      }
+      .swiper-wrapper {
+        justify-content: space-between;
+      }
+      hr {
+        margin-block-start: 0;
+        border: 0;
+        background: #ffffff57;
+        height: 1px;
+      }
+      .n_cat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-block-end: 18px;
+        margin: 10px;
+      }
+      .n_cat > .button {
+        width: 60px;
+        padding: 10px;
+        border-radius: 10px;
+        /* background-color: #ffffff33; */
+        background-image: linear-gradient(45deg, #00ffff57, #9100ff54);
+        height: 45px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
+      }
+      .n_cat > .button > img {
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-title">
+        <!-- <img id="logo" src="file:///android_asset/img/Logo.png" alt="logo" /> -->
+        <img id="logo" src="images/logo.png" alt="logo" width="50px" />
+        <h1>Saathi</h1>
+      </div>
+      <div id="header-icons">
+        <i
+          title="Share this App, button"
+          class="fas fa-share"
+          onclick="location.href='http://action_share';"
+        ></i>
+        <i
+          title="Notifications, button"
+          class="fas fa-bell"
+          onclick="location.href='http://action_notifications';"
+        ></i>
+        <i
+          title="Help, button"
+          class="fas fa-hands-helping"
+          onclick="location.href='help.html';"
+        ></i>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="categories">
+        <div class="main-box">
+          <div class="text">
+            <h2>Saathi</h2>
+            <p>
+              Your All-in-One Companion for Productivity, Entertainment,
+              Learning, and Career Advancement
+            </p>
+          </div>
+          <div class="images">
+            <img src="/images/roboto.webp" alt="" />
+            <img src="/images/leaf.webp" alt="" />
+          </div>
+        </div>
+        <h2>Utility Tools</h2>
+        <div class="category">
+          <!-- <div class="cat-button" onclick="location.href='go:saathi_ai';"> -->
+          <div
+            class="cat-button"
+            onclick="location.href='Saathi AI.html';"
+            title="Saathi AI"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true">
+                robot_2 </i
+              >Saathi AI
+            </p>
+          </div>
+          <div
+            class="cat-button"
+            onclick="location.href='saathi_appmanager';"
+            title="App Manager"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true"
+                >folder_managed</i
+              >
+              App Manager
+            </p>
+          </div>
+          <div
+            class="cat-button"
+            onclick="location.href='saathi_pdfreader';"
+            title="PDF Reader"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true"
+                >picture_as_pdf</i
+              >
+              PDF Reader
+            </p>
+          </div>
+          <div
+            class="cat-button"
+            onclick="location.href='saathi_ocr';"
+            title="OCR"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true">
+                plagiarism
+              </i>
+              OCR
+            </p>
+          </div>
+          <!-- <div
+            class="cat-button"
+            onclick="location.href='around_me.html';"
+            title="Around Me, Button"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true">
+                metabolism
+              </i>
+              Around Me
+            </p>
+          </div>
+          <div
+            class="cat-button"
+            onclick="location.href='travelMode.html';"
+            title="Travel Mode , Button"
+          >
+            <p>
+              <i class="material-symbols-outlined" aria-hidden="true">
+                hiking
+              </i>
+              Travel Mode
+            </p>
+          </div> -->
+        </div>
+        <hr>
+        <h2>Navigation</h2>
+        <div class="navigation_category">
+          <!-- <div class="cat-button" onclick="location.href='go:saathi_ai';"> -->
+          <div
+            class="cat-button"
+            onclick="location.href='Saathi AI.html';"
+            title="navigation"
+          >
+            <p>
+                <i class="material-symbols-outlined">
+                    pin_drop
+                </i>Navigation
+            </p>
+          </div>
+          </div>
+          <hr>
+        <h2>News & Podcasts</h2>
+        <div class="n_cat">
+          <div class="button" onclick="location.href='e-paper.html'">
+            <img
+              src="images/E-Papers.png"
+              alt="E-Paper, image"
+              title="E-Paper , button"
+            />
+          </div>
+          <div class="button" onclick="location.href='live_news.html'">
+            <img
+              src="images/Live_news.webp"
+              alt="Live News, image"
+              title="live news, button"
+            />
+          </div>
+          <div class="button" onclick="location.href='new_on_air.html'">
+            <img
+              src="images/News On AIR.webp"
+              alt="news on air, image"
+              title="news on air, button"
+            />
+          </div>
+          <div class="button" onclick="location.href='podcast.html'">
+            <img
+              src="images/Podcasts.webp"
+              alt="Podcasts, image"
+              title="Podcasts, buton"
+            />
+          </div>
+        </div>
+        <hr />
+        <h2>Information & Entertainment Hub</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper info-category">
+            <div class="swiper-slide">
+              <div
+                class="button"
+                onclick="location.href='app_store.html';"
+                title="App Store"
+              >
+                <img
+                  src="images/appstore.webp"
+                  alt="App Store, Image"
+                  aria-hidden="true"
+                />
+                <p>App Store</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="button"
+                onclick="location.href='Education_World.html';"
+                title="Education"
+              >
+                <img
+                  src="images/books.webp"
+                  alt="Education Page, Image"
+                  aria-hidden="true"
+                />
+                <p>Education</p>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
+              <div
+                class="button"
+                onclick="location.href='News & Podcasts.html';"
+                title="News"
+              >
+                <img src="images/newnews.webp" alt="News Page, Image" aria-hidden="true" />
+                <p>News & Podcasts</p>
+              </div>
+            </div> -->
+            <div class="swiper-slide">
+              <div
+                class="button"
+                onclick="location.href='Online Radio.html';"
+                title="Online Radio"
+              >
+                <img
+                  src="images/on_radio.png"
+                  alt="Online Radio, Image"
+                  style="width: 68px"
+                  aria-hidden="true"
+                />
+                <p>Online Radio</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="button"
+                onclick="location.href='T2Audio.html';"
+                title="T2Audio"
+              >
+                <img
+                  src="images/audio.webp"
+                  alt="Audio , Image"
+                  aria-hidden="true"
+                />
+                <p>T2Audio</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="button fun"
+                onclick="location.href='Fun_Zone.html';"
+                title="Fun Zone"
+              >
+                <img
+                  src="images/glass.webp"
+                  alt="Fun zone, image"
+                  style="
+                    width: 63px;
+                    transform: rotate(32deg) translateX(23px) translateY(4px);
+                    position: relative;
+                    z-index: 1;
+                  "
+                  aria-hidden="true"
+                />
+                <img
+                  src="images/fun.webp"
+                  alt="3d glasses, image"
+                  style="width: 70px; transform: translateY(-5px)"
+                  aria-hidden="true"
+                />
+                <p>Fun Zone</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h2>Career & Opportunities</h2>
+        <div class="job-category" style="padding-block-end: 20px">
+          <!-- <div class="button" onclick="location.href='go:jobs_villa';"> -->
+          <div
+            class="button"
+            onclick="location.href='Jobs_Villa.html';"
+            title="Jobs Villa, Button"
+          >
+            <!-- Jobs Villa -->
+            <img
+              src="images/job.webp"
+              alt="Jobs Page , image"
+              title="Jobs Villa, Image"
+            />
+          </div>
+        </div>
+        <!-- <hr /> -->
+      </div>
+    </div>
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
